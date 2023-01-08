@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import AvoFooter from "./components/AvoFooter";
+import CladeFooter from "./components/CladeFooter/CladeFooter";
+import FlowbaseFooter from "./components/FlowbaseFooter/FlowbaseFooter";
+import GetastraFooter from "./components/GetAstraFooter/GetastraFooter";
+import VectornatorFooter from "./components/VectornatorFooter/VectornatorFooter";
+import ViewportProvider from "./viewport";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ViewportProvider>
+        <AvoFooter />
+        <CladeFooter />
+        <GetastraFooter />
+        <VectornatorFooter />
+        <FlowbaseFooter />
+      </ViewportProvider>
+    </>
   );
 }
 
